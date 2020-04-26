@@ -1,0 +1,21 @@
+{
+  "name": "shuffler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mainWindow.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "electron": "8.2.0",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "shuffle",
+    "group"
+  ],
+  "author": "focus-group",
+  "license": "ISC"
+}

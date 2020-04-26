@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shuffle system</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="/fontawesome-free-5.12.1-web/css/all.css"> -->
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.js">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.css">
+</head>
+
+<body>
+    <div class="one">
+        <div class="showhide">
+            <a href="#" class="btn btn-primary active" id="show" role="button">
+                <!-- &#9776 -->
+                <svg class="bi bi-three-dots-vertical" width="1em" height="1.5em" viewBox="0 0 16 16"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M9.5 13a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </a>
+            <a href="#" class="btn btn-primary active" id="hide" role="button">
+                <!-- &#10006 -->
+                <svg class="bi bi-x-square" width="1em" height="1.5em" viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
+                        clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                        clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <div class="first">
+            <div class="header">
+                <div class="logo"><a href="#">
+                        shuffle system
+                    </a></div>
+                <div class="billy">
+                    <a name="join" id="join" class="btn btn-danger" href="#" role="button">
+                        <!-- <i class="fa fa-home"></i>  -->
+                        <svg class="bi bi-alarm-fill" width="2em" height="1.5em" viewBox="0 0 16 16"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.5.5A.5.5 0 016 0h4a.5.5 0 010 1H9v1.07a7.002 7.002 0 013.537 12.26l.817.816a.5.5 0 01-.708.708l-.924-.925A6.967 6.967 0 018 16a6.967 6.967 0 01-3.722-1.07l-.924.924a.5.5 0 01-.708-.708l.817-.816A7.002 7.002 0 017 2.07V1H5.999a.5.5 0 01-.5-.5zM.86 5.387A2.5 2.5 0 114.387 1.86 8.035 8.035 0 00.86 5.387zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 013.527 3.527A2.5 2.5 0 0013.5 1zm-5 4a.5.5 0 00-1 0v3.882l-1.447 2.894a.5.5 0 10.894.448l1.5-3A.5.5 0 008.5 9V5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p>Dashboard</p>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar">
+                <a name="" id="createGroup" class="btn btn-default" href="#" role="button">
+                    <!-- <i class="fa fa-plus"></i> -->
+                    <svg class="bi bi-plus" width="7em" height="2.5em" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z"
+                            clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p>create group</p>
+                </a>
+                <a name="" id="share" class="btn btn-default" href="#" role="button">
+                    <!-- <i class="fa fa-share"></i> -->
+                    <svg class="bi bi-cursor-fill" width="7em" height="1.5em" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M14.082 2.182a.5.5 0 01.103.557L8.528 15.467a.5.5 0 01-.917-.007L5.57 10.694.803 8.652a.5.5 0 01-.006-.916l12.728-5.657a.5.5 0 01.556.103z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p>share</p>
+                </a>
+                <a name="" id="import" class="btn btn-default" href="#" role="button">
+                    <!-- <i class="fa fa-file"></i> -->
+                    <svg class="bi bi-folder-symlink-fill" width="7em" height="1.7em" viewBox="0 0 16 16"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M13.81 3H9.828a2 2 0 01-1.414-.586l-.828-.828A2 2 0 006.172 1H2.5a2 2 0 00-2 2l.04.87a1.99 1.99 0 00-.342 1.311l.637 7A2 2 0 002.826 14h10.348a2 2 0 001.991-1.819l.637-7A2 2 0 0013.81 3zM2.19 3c-.24 0-.47.042-.684.12L1.5 2.98a1 1 0 011-.98h3.672a1 1 0 01.707.293L7.586 3H2.19zm9.608 5.271l-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p>import file</p>
+                </a>
+                <a name="" id="view" class="btn btn-default" href="#" role="button">
+                    <!-- <i class="fa fa-users"></i> -->
+                    <svg class="bi bi-people-fill" width="7em" height="1.7em" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 100-6 3 3 0 000 6zm-5.784 6A2.238 2.238 0 015 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 005 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p>view groups</p>
+                </a>
+            </div>
+            <hr>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, illum ea. Odio dolorem quisquam
+                repudiandae? Ab aliquid explicabo laboriosam repellendus?
+                <br>
+                Sed tenetur aspernatur commodi dolorum? Dolores praesentium saepe veniam vitae
+            </div>
+        </div>
+    </div>
+    <div class="two">
+        <div class="second">
+            <div class="input-group mb-3" id="searchbox">
+                <div class="input-group-prepend">
+                    <!-- <i class="fa fa-search"></i> -->
+                    <svg class="bi bi-search" width="1.5em" height="3em" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                            clip-rule="evenodd" />
+                        <path fill-rule="evenodd"
+                            d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <input type="text" class="form-control" placeholder="Search for your group here" id="inputbox">
+            </div>
+            <div class="image">
+                <img src="student1.jpg">
+            </div>
+
+            <div class="darmytext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, esse sint officia, numquam
+                    porro similique provident excepturi nemo distinctio veritatis iure doloribus labore eius,
+                    consequuntur pariatur delectus alias reiciendis modi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quia officiis, tempora maxime veniam
+                    quidem dolor placeat a voluptatibus neque cum itaque ipsum alias cumque saepe nam libero amet nulla!
+                </p>
+            </div>
+            <div class="darmytext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, esse sint officia, numquam
+                    porro similique
+                    provident excepturi nemo distinctio veritatis iure doloribus labore eius, consequuntur pariatur
+                    delectus alias
+                    reiciendis modi!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, cumque. Corrupti sunt,
+                    eligendi at voluptatum aut id, atque saepe perferendis accusamus tenetur voluptate ut, architecto
+                    cupiditate nostrum? Odit, voluptatem hic?
+                </p>
+            </div>
+            <div class="darmytext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, esse sint officia, numquam
+                    porro similique
+                    provident excepturi nemo distinctio veritatis iure doloribus labore eius, consequuntur pariatur
+                    delectus alias
+                    reiciendis modi!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde exercitationem iste vitae labore
+                    corporis nobis, laboriosam incidunt consequuntur ipsam ducimus dolores vero excepturi modi nulla
+                    ipsa? Error eligendi recusandae esse!
+                </p>
+            </div>
+            <div class="darmytext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, esse sint officia, numquam
+                    porro similique
+                    provident excepturi nemo distinctio veritatis iure doloribus labore eius, consequuntur pariatur
+                    delectus alias
+                    reiciendis modi!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="three">
+        <div class="bell">
+            <a name="" id="bello" class="btn btn-primary" href="#" role="button">
+                <!-- <i class="fa fa-bell"></i> -->
+                <svg class="bi bi-bell-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="M8 16a2 2 0 002-2H6a2 2 0 002 2zm.995-14.901a1 1 0 10-1.99 0A5.002 5.002 0 003 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                </svg>
+            </a>
+        </div>
+        <div class="third">
+            <div class="userarea">
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <button type="button" class="btn btn-default">
+                                <!-- <i class="fa fa-bell"></i> -->
+                                <svg class="bi bi-bell-fill" width="1.5em" height="1em" viewBox="0 0 16 16"
+                                    fill="currentColor">
+                                    <path
+                                        d="M8 16a2 2 0 002-2H6a2 2 0 002 2zm.995-14.901a1 1 0 10-1.99 0A5.002 5.002 0 003 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li id="userzone">
+                            <div class="btn-group dropleft">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    User Zone
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a name="" id="" class="btn btn-primary" href="#" role="button">edit profile</a>
+                                    <a name="" id="" class="btn btn-primary" href="#" role="button">view group</a>
+                                    <a name="" id="" class="btn btn-primary" href="#" role="button">Lectures</a>
+                                    <a name="" id="" class="btn btn-primary" href="#" role="button">Assessment</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="activityarea">
+                <div id="datepicker"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>require('./navigation.js');</script>
+
+<script>
+    $(document).ready(function () {
+
+        // $('.first').slideDown()
+        $('#userzone').click(function () {
+            $('#micros').slideToggle()
+            // $('#down').css("diaplay","none");
+            // $('#up').css("display","block");
+        })
+
+        $('#datepicker').datepicker({});
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $('.one').addClass('moving')
+            }
+
+        })
+
+
+        $('#show').click(function () {
+            $('.first').slideDown()
+            $('#show').hide()
+            $('#hide').show()
+        })
+
+
+        $('#hide').click(function () {
+            $('.first').slideUp()
+            $('#hide').hide()
+            $('#show').show()
+        })
+
+        $('#bello').click(function () {
+            $('.third').slideToggle();
+        })
+    });
+</script>
+
+</html>
